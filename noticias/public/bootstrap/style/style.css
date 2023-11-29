@@ -1,0 +1,596 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+td {
+  vertical-align: middle;
+}
+
+.b-login {
+  display: flex;
+  align-items: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: #f5f5f5;
+}
+
+.img-list {
+  object-fit: cover;
+  width: auto;
+  height: 75px;
+}
+
+.form-signin {
+  width: 100%;
+  max-width: 330px;
+  padding: 15px;
+  margin: auto;
+}
+
+.form-signin .checkbox {
+  font-weight: 400;
+}
+
+.form-signin .form-floating:focus-within {
+  z-index: 2;
+}
+
+.form-signin input[type="email"] {
+  margin-bottom: -1px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.form-signin input[type="password"] {
+  margin-bottom: 10px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+.bd-placeholder-img {
+  font-size: 1.125rem;
+  text-anchor: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+
+@media (min-width: 768px) {
+  .bd-placeholder-img-lg {
+    font-size: 3.5rem;
+  }
+}
+
+
+.bd-placeholder-img {
+  font-size: 1.125rem;
+  text-anchor: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+
+@media (min-width: 768px) {
+  .bd-placeholder-img-lg {
+    font-size: 3.5rem;
+  }
+}
+
+.b-example-divider {
+  height: 3rem;
+  background-color: rgba(0, 0, 0, .1);
+  border: solid rgba(0, 0, 0, .15);
+  border-width: 1px 0;
+  box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+}
+
+.b-example-vr {
+  flex-shrink: 0;
+  width: 1.5rem;
+  height: 100vh;
+}
+
+.bi {
+  vertical-align: -.125em;
+  fill: currentColor;
+}
+
+.nav-scroller {
+  position: relative;
+  z-index: 2;
+  height: 2.75rem;
+  overflow-y: hidden;
+}
+
+.nav-scroller .nav {
+  display: flex;
+  flex-wrap: nowrap;
+  padding-bottom: 1rem;
+  margin-top: -1px;
+  overflow-x: auto;
+  text-align: center;
+  white-space: nowrap;
+  -webkit-overflow-scrolling: touch;
+}
+/* Reset de estilos padrão */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Estilo para o corpo da página */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  position: relative;
+  background-color: #000000; /* Cor de fundo da página */
+  color: #333; /* Cor do texto principal */
+  overflow: visible;
+}
+
+/* Estilo para o cabeçalho */
+header {
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 20px;
+  position: fixed; /* Manter o cabeçalho no topo da página enquanto rola */
+  top: 0; /* Colocar no topo da página */
+  right: 0; /* Colocar no canto superior direito */
+  left: 0; /* Colocar no canto superior esquerdo */
+  z-index: 1;
+  display: flex; /* Usar flexbox para alinhar o logo e o menu */
+  justify-content: space-between; /* Alinhar o logo à esquerda e o menu à direita */
+  align-items: center; /* Centralizar verticalmente */
+}
+
+/* Estilo para o cabeçalho fixo */
+header.sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000; /* Certifique-se de que o cabeçalho fique acima de outros elementos */
+  /* Outros estilos para o cabeçalho fixo, como cor de fundo, tamanho da fonte, etc. */
+}
+
+/* Estilo para o logotipo */
+.logo img {
+  max-width: 80px;
+  height: auto;
+}
+
+/* Estilo para a navegação */
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex; /* Usar flexbox para alinhar os itens do menu horizontalmente */
+}
+
+nav ul li {
+  margin-left: 20px;
+}
+
+nav ul li:first-child {
+  margin-left: 0; /* Remover a margem esquerda do primeiro item do menu */
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+}
+
+/* Estilo para o dropdown */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #333; /* Cor de fundo do dropdown */
+  min-width: 160px;
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown-content a {
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  color: #fff;
+}
+
+.dropdown-content a:hover {
+  background-color: #444; /* Cor de fundo do item do dropdown ao passar o mouse */
+}
+/* Estilos dos destaques */
+.featured-news {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+}
+
+.featured-news-item {
+  flex: 0 0 calc(25% - 20px);
+  background-color: #0f0e0e; /* Cor de destaque - Laranja mais vibrante */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4); /* Sombra mais pronunciada */
+  text-align: center;
+  border-radius: 30px;
+  overflow: hidden;
+  margin-right: 20px;
+  color: #ffffff; /* Cor do texto dentro do destaque */
+}
+
+.featured-news-item img {
+  max-width: 100%;
+  height: auto;
+}
+/* Estilos para o contêiner do carrossel */
+.carousel {
+  margin-top: 20px;
+}
+
+/* Estilos para os itens do carrossel */
+.owl-carousel .item {
+  background-color: #ff4500;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.4);
+  display: flex;
+  flex-direction: column; /* Coluna para empilhar a imagem e o texto */
+  justify-content: space-between;
+}
+/* Estilos para a imagem dentro do item do carrossel */
+.owl-carousel .item img {
+  max-width: 100%;
+  height: auto;
+}
+/* Estilos para o texto dentro do item do carrossel */
+.owl-carousel .item .news-content {
+  text-align: center;
+}
+
+.owl-carousel .item .news-content h3 {
+  font-size: 24px;
+  margin-top: 10px;
+}
+
+.owl-carousel .item .news-content p {
+  font-size: 15px;
+  color: #ffffff;
+  margin-top: 15px;
+}
+.owl-carousel .owl-stage {
+  background: transparent;
+}
+/* Estilos do carrossel de destaques */
+.owl-carousel {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.owl-carousel .item {
+  background-color: #2c2a44;
+  border-radius: 10px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.4);
+  padding: 10px;
+  width: 300px; /* Largura fixa para cada item */
+  height: 450px; /* Altura fixa para cada item */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.owl-carousel .item img {
+  max-width: 300px; /* Define a largura máxima para que a imagem não exceda a largura do item */
+  max-height: 155px; /* Define a altura máxima desejada para as imagens */
+  width: auto; /* Redefine a largura para automática, para manter a proporção da imagem */
+}
+
+.news-card {
+  background-color: #1f1c1c; /* Cor de fundo dos cartões de destaque */
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.4);
+  flex: 10;
+}
+
+.news-card img {
+  width: 200px; /* Largura de 100% para preencher o espaço disponível */
+  object-fit: cover;
+  height: 200px; /* Altura fixa para todas as imagens */
+  object-fit: cover; /* Redimensionamento da imagem para preencher a área definida */
+  border-radius: 10px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.4);
+}
+
+.news-content h3 {
+  font-size: 24px;
+  margin-top: 20px;
+}
+
+.news-content p {
+  font-size: 15px;
+  color: #ffffff; /* Cor do texto secundário */
+}
+
+.owl-carousel .owl-dots {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.owl-dot {
+  background-color: #ccc; /* Cor dos indicadores de slide */
+  border-radius: 40%;
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.owl-dot.active {
+  background-color: #5e3e32; /* Cor do indicador ativo */
+}
+/* Estilo para a classe .carousel-container */
+.carousel-container {
+  background-color: #1f1d1d; /* Cor de fundo da caixa */
+  padding: 20px; /* Espaçamento interno da caixa */
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); /* Sombra para a caixa */
+  margin-top: 200px; /* Espaço entre o cabeçalho e a caixa */
+  
+  /* Novos estilos para diminuir o tamanho da caixa */
+  max-width: 1050px; /* Largura máxima da caixa */
+  margin-left: auto; /* Centraliza horizontalmente */
+  margin-right: auto; /* Centraliza horizontalmente */
+}
+/* Adicione estas regras CSS para as imagens à esquerda e à direita do background */
+#background-image-left {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 22.4%; /* Defina a largura desejada para a imagem à esquerda */
+  height: 100%;
+  background-image: url('/img/borda\ esquerda\ transparente.png'); /* Substitua com o caminho da sua imagem à esquerda */
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: 0; /* Coloca a imagem à esquerda atrás de tudo */
+}
+
+#background-image-right {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 22%; /* Defina a largura desejada para a imagem à direita */
+  height: 100%;
+  background-image: url('/img/borda\ direita\ transparente.png'); /* Substitua com o caminho da sua imagem à direita */
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: 0; /* Coloca a imagem à direita atrás de tudo */
+}
+.sticky-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background-color: rgba(0, 0, 0, 0.6); /* Cor de fundo quando fixo */
+  padding: 20px;
+}
+header.hidden {
+  display: none;
+}
+/* Estilos das notícias */
+.news-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.news-item {
+  flex-basis: calc(33.333% - 20px);
+  margin-bottom: 20px;
+  background-color: #2c2a44; /* Cinza escuro mais claro */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4); /* Sombra mais pronunciada */
+  border-radius: 10px;
+  overflow: hidden;
+  padding: 10px; /* Reduzi o padding para caber melhor o conteúdo */
+}
+
+.news-content {
+  padding: 10px;
+}
+
+.news-item img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Ajustar o tamanho da fonte para caber o texto */
+.news-content h3 {
+  font-size: 18px; /* Reduzi o tamanho da fonte para caber melhor */
+  margin-bottom: 10px;
+}
+
+.news-content p {
+  font-size: 14px; /* Mantive o tamanho da fonte para o texto */
+}
+
+.logo {
+  float: left; /* Alinhar o logotipo à esquerda */
+  margin-right: 0px; /* Espaço entre o logotipo e o menu */
+  width: 30%;
+}
+
+.logo img {
+  max-width: 90px; /* Largura máxima da imagem do logotipo */
+  height: auto; /* Mantém a proporção da imagem */
+}
+/* Estilos para a Notícia Principal */
+.main-news {
+  background-color: #2c2a44; /* Laranja mais vibrante */
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4); /* Sombra mais pronunciada */
+  overflow: hidden;
+}
+
+.main-news h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.main-news-item {
+  background-color: #2c2a44; /* Laranja mais vibrante */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4); /* Sombra mais pronunciada */
+  text-align: center;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.main-news-item img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+/* Estilos para as novas notícias com diferentes layouts */
+.news-container {
+  margin-top: 20px; /* Espaço entre as notícias */
+}
+
+.news-item {
+  background-color: #2c2a44; /* Laranja mais vibrante */
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.4); /* Sombra mais pronunciada */
+  border-radius: 8px;
+  margin-bottom: 20px; /* Espaço entre as notícias */
+  overflow: hidden;
+}
+
+.image-left {
+  display: flex;
+  flex-direction: row; /* Imagem à esquerda, descrição à direita */
+  align-items: center;
+}
+
+.image-left .news-image {
+  flex: 0 0 40%; /* Largura da imagem */
+  padding: 10px;
+}
+
+.image-left .news-description {
+  flex: 0 0 50%; /* Largura da descrição */
+  padding: 10px;
+  text-align: left; /* Alinhar o texto à esquerda */
+}
+
+.image-right {
+  display: flex;
+  flex-direction: row-reverse; /* Descrição à esquerda, imagem à direita */
+  align-items: center;
+}
+
+.image-right .news-image {
+  flex: 0 0 40%; /* Largura da imagem */
+  padding: 10px;
+}
+
+.image-right .news-description {
+  flex: 0 0 55%; /* Largura da descrição */
+  padding: 10px;
+  text-align: left; /* Alinhar o texto à esquerda */
+}
+
+.news-image img {
+  max-width: 100%;
+  height: auto;
+}
+
+.menu {
+  background-color: #7325a7; /* Cor de fundo sólida */
+  color: #ffffff; /* Cor do texto para branco (#fff) ou outra cor que contraste bem com a cor de fundo */
+}
+
+/* Estilos para links não clicados */
+a {
+  color: #ffffff; /* Cor padrão para links não clicados */
+  text-decoration: none; /* Remover sublinhado dos links não clicados */
+}
+
+/* Estilos para links quando são clicados */
+a:hover {
+  color: #ffcc00; /* Cor quando o link é hover (opcional, pode ser qualquer cor que desejar) */
+}
+
+/* Remover o contorno (outline) padrão ao clicar no link */
+a:focus {
+  outline: none;
+}
+.flex-center{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.box {
+  height: 100vh;
+}
+.botao-voltar-ao-topo {
+  position: fixed;
+  bottom: 10px;
+  right: 50px;
+  background: black;
+  border-radius: 10px;
+}
+.botao-voltar-ao-topo p {
+  color: white;
+  margin: 0;
+  padding: 20px;
+cursor:pointer;
+}
+/* Estilos para as logos das redes sociais */
+.social-icons {
+  position: fixed;
+  top: 50%; /* Posiciona no meio verticalmente */
+  right: 20px; /* Afasta do canto direito */
+  transform: translateY(-50%); /* Centraliza verticalmente */
+  display: flex;
+  flex-direction: column; /* Alinha os ícones verticalmente */
+}
+
+.social-icons a {
+  display: inline-block; /* Para garantir que cada ícone fique em uma linha */
+  margin-left: 10px; /* Espaço entre as logos */
+}
+
+.social-icons img {
+  width: 30px; /* Largura dos ícones */
+  height: 30px; /* Altura dos ícones */
+  max-width: 100%; /* Garante que os ícones não excedam 40px de largura */
+  height: auto; /* Mantém a proporção dos ícones */
+}
+.icone-color {
+  fill: #ffffff; /* Substitua "#FF0000" pela cor desejada, por exemplo, vermelho (#FF0000) */
+}
+/* Efeito de zoom suave em imagens */
+.imagem-hover {
+  transition: transform 0.3s ease; /* Adiciona uma transição suave de 0.3 segundos */
+}
+
+.imagem-hover:hover {
+  transform: scale(1.1); /* Aumenta a imagem em 10% quando o mouse passa por cima */
+}
+.titulo-da-pagina {
+  color: #fcfcfc; /* Cor vermelha */
+}

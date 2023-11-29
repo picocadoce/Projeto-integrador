@@ -1,0 +1,27 @@
+CRITICAL - 2023-11-10 01:06:03 --> Invalid file: "msgUsuario .php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('msgUsuario .php')
+ 2 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('msgUsuario ', [], true)
+ 3 APPPATH\Controllers\Usuario.php(24): view('msgUsuario ', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Usuario->deletar('10')
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-10 01:06:42 --> Invalid file: "msgUsuario .php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('msgUsuario .php')
+ 2 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('msgUsuario ', [], true)
+ 3 APPPATH\Controllers\Usuario.php(24): view('msgUsuario ', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Usuario->deletar('11')
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Usuario))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-10 23:32:33 --> syntax error, unexpected token "}", expecting ";" or "{"
+in APPPATH\Controllers\Usuario.php on line 38.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(291): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs\\noticias\\app\\Controllers\\Usuario.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(269): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Usuario')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Usuario')
+ 4 SYSTEMPATH\CodeIgniter.php(900): class_exists('\\App\\Controllers\\Usuario', true)
+ 5 SYSTEMPATH\CodeIgniter.php(489): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()

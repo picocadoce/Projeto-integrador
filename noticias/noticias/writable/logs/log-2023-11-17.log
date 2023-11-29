@@ -1,0 +1,68 @@
+CRITICAL - 2023-11-17 23:00:02 --> The route for "noticias/novo" cannot be found.
+in SYSTEMPATH\HTTP\RedirectResponse.php on line 62.
+ 1 SYSTEMPATH\HTTP\RedirectResponse.php(62): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute('noticias/novo')
+ 2 APPPATH\Controllers\Noticia.php(53): CodeIgniter\HTTP\RedirectResponse->route(false)
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Noticia->gravar()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Noticia))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-17 23:00:06 --> The route for "noticias/novo" cannot be found.
+in SYSTEMPATH\HTTP\RedirectResponse.php on line 62.
+ 1 SYSTEMPATH\HTTP\RedirectResponse.php(62): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute('noticias/novo')
+ 2 APPPATH\Controllers\Noticia.php(53): CodeIgniter\HTTP\RedirectResponse->route(false)
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Noticia->gravar()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Noticia))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-17 23:02:13 --> The route for "noticias/novo" cannot be found.
+in SYSTEMPATH\HTTP\RedirectResponse.php on line 62.
+ 1 SYSTEMPATH\HTTP\RedirectResponse.php(62): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute('noticias/novo')
+ 2 APPPATH\Controllers\Noticia.php(53): CodeIgniter\HTTP\RedirectResponse->route(false)
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Noticia->gravar()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Noticia))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-17 23:28:23 --> Undefined array key "TAGS"
+in APPPATH\Views\noticias.php on line 49.
+ 1 APPPATH\Views\noticias.php(49): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "TAGS"', 'C:\\xampp\\htdocs\\noticias\\app\\Views\\noticias.php', 49)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\noticias\\app\\Views\\noticias.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('noticias', [], true)
+ 5 APPPATH\Controllers\Noticia.php(16): view('noticias', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Noticia->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Noticia))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-17 23:28:43 --> Undefined array key "TAGS"
+in APPPATH\Views\noticias.php on line 49.
+ 1 APPPATH\Views\noticias.php(49): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "TAGS"', 'C:\\xampp\\htdocs\\noticias\\app\\Views\\noticias.php', 49)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\noticias\\app\\Views\\noticias.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('noticias', [], true)
+ 5 APPPATH\Controllers\Noticia.php(16): view('noticias', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Noticia->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Noticia))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-17 23:28:49 --> Undefined array key "TAGS"
+in APPPATH\Views\noticias.php on line 49.
+ 1 APPPATH\Views\noticias.php(49): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "TAGS"', 'C:\\xampp\\htdocs\\noticias\\app\\Views\\noticias.php', 49)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\noticias\\app\\Views\\noticias.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('noticias', [], true)
+ 5 APPPATH\Controllers\Noticia.php(16): view('noticias', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Noticia->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Noticia))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-11-17 23:29:24 --> Undefined array key "TAGS"
+in APPPATH\Views\noticias.php on line 49.
+ 1 APPPATH\Views\noticias.php(49): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "TAGS"', 'C:\\xampp\\htdocs\\noticias\\app\\Views\\noticias.php', 49)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\xampp\\htdocs\\noticias\\app\\Views\\noticias.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('noticias', [], true)
+ 5 APPPATH\Controllers\Noticia.php(16): view('noticias', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Noticia->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Noticia))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
